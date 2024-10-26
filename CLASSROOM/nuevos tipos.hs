@@ -36,13 +36,13 @@ ordenaPorEdad :: [Estudiante] -> [Estudiante]
 ordenaPorEdad = sortBy (\e1 e2 -> compare (edad e1) (edad e2))
 
 -- Función para obtener al estudiante más joven
-estudianteMasJoven :: [Estudiante] -> Estudiante
-estudianteMasJoven = minimumBy (\e1 e2 -> compare (edad e1) (edad e2))
+estudianteJoven :: [Estudiante] -> Estudiante
+estudianteJoven = minimumBy (\e1 e2 -> compare (edad e1) (edad e2))
 
 
 -- Función para obtener al estudiante más viejo
-estudianteMasViejo :: [Estudiante] -> Estudiante
-estudianteMasViejo = maximumBy (\e1 e2 -> compare (edad e1) (edad e2))
+estudianteMayor :: [Estudiante] -> Estudiante
+estudianteMayor = maximumBy (\e1 e2 -> compare (edad e1) (edad e2))
 
 -- Función para calcular el promedio de edades
 promedioEdad :: [Estudiante] -> Float
